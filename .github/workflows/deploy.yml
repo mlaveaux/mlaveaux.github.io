@@ -32,24 +32,28 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    steps:
+    steps:          
       - name: Setup sccache
         uses: mozilla-actions/sccache-action@v0.0.3
 
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.1
+
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       - name: Build Website
-        run: cargo run --release
+        run: cd website && zola build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload the output repository
-          path: 'tmp/'
+          path: 'website/public/'
 
       - name: Deploy to GitHub Pages
         id: deployment
