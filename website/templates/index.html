@@ -1,7 +1,23 @@
 {% extends "base.html" %}
 
+{% block title %}
+  {{ config.title | safe }} | Landing
+{% endblock title %}
+
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
+<nav>
+  <div class="nav-bg"></div>
+  <ul>
+    <li><a href="">Link</a></li>
+    <li><a href="">Link</a></li>
+    <li><a href="">Link</a></li>
+    <li><a href="">Link</a></li>
+  </ul>
+</nav>
+
+<div class="landing">
+  <h1>
+    Maurice Laveaux
+  </h1>
+</landing>
 {% endblock content %}
