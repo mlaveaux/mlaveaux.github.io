@@ -1,0 +1,3 @@
+[submodule "3rd-party/zola"]
+	path = 3rd-party/zola
+	url = https://github.com/getzola/zola
