@@ -1,9 +1,16 @@
 # Build instructions
 
-Acquire `zola` using the installation instructions provided on [getzola.org](https://www.getzola.org/documentation/getting-started/installation/). Alternatively, since Rust is a prerequired for building the website anyway we provide the sources in `3rd-party/zola`. From there it can be installed using `cargo` directly using the following command:
+The website is built using [Zola](https://www.getzola.org/). To build the
+website, first clone the repository and initialize the submodules:
 
+```bash
+    git submodule update --init --recursive
 ```
-    cargo install --path zola --locked
+
+Zola can be installed using `cargo` directly using the following command:
+
+```bash
+    cargo install --path 3rd-party/zola --locked
 ```
 
 # Deploying
