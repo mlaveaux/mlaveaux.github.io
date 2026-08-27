@@ -1,17 +1,29 @@
-# The URL the site will be built for
 base_url = "https://mlaveaux.github.io/"
-
-# Whether to automatically compile all Sass files in the sass directory
+title = "Home"
+theme = "linkita"
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
-
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+build_search_index = true
 
 [extra]
-# Put all your custom variables here
-title = "Maurice Laveaux"
+header_menu_name = "header_links"
+
+[extra.profiles.mlaveaux]
+avatar_url = "Laveaux_Maurice_MCS_PROM_PO_AS_3952.png"
+social  = [
+  { name = "github", href = "https://github.com/mlaveaux" },
+  { name = "email", href = "mailto:mauricelaveaux@gmail.com" },
+]
+
+# Enable comments
+comment = false
+# Enable KaTeX support
+math = false
+# Enable Mermaid support
+mermaid = false
+
+# Menus
+[extra.menus]
+header_links = [
+  { url = "@/projects/_index.md", name = "Projects" },
+  { url = "@/cv/cv.md", name = "CV" },
+]
