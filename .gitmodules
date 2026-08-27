@@ -2,7 +2,7 @@
 	path = 3rd-party/zola
 	url = https://github.com/getzola/zola
 	tag = v0.22.1
-[submodule "website/themes/linkita"]
-	path = website/themes/linkita
+[submodule "themes/linkita"]
+	path = themes/linkita
 	url = https://github.com/salif/linkita.git
 	branch = main
