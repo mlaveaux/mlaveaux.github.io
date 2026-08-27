@@ -28,7 +28,7 @@ Occasionally I am also involved in teaching activities, such as supervising
 (master) students and working as teaching assistant for the Software
 Specification course.
 
-My full CV can be found [here](cv/cv.md).
+My full CV can be found [here](@/cv/cv.md).
 
 # Interests
 
@@ -40,7 +40,7 @@ Our mCRL2 toolset is written in C++, which is my main expertise, but I am also
 exploring the potential of the Rust programming language for developing safe and
 performant software. In particular, I am interested in the formal verification
 of concrete Rust programs. Details about this can be found on the
-[MERC](projects/merc.md) project page, of which I am the main developer.
+[MERC](@/projects/merc.md) project page, of which I am the main developer.
 
 # Previous work
 
